@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/shoppingcart.css">
+    <link rel="stylesheet" href="assets/header.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">XYZshoe</a>
+
+        <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="login.html">LOG IN</a>
+            <a href="shop.html">SHOP</a>
+            <a href="contactus.html">CONTACT</a>
+            <a href="aboutus.html">ABOUT US</a>
+        </nav>
+        
+
+    </header>
+    
+    <div class="container1">
+        <div class="shipping">
+            <h2> Delivery details</h2>
+            <input type="radio" name="formSelector" value="form1" onclick="toggleForm('form1')">
+            <label>Already have an account</label><br>
+            <input type="radio" name="formSelector" value="form2" onclick="toggleForm('form2')">
+            <label>Create a new account</label>
+        </div>
+        <div id="form1" class="form-group">
+            
+            <form onsubmit="validateForm1()">
+                <h2>Form 1</h2>
+                <label>Enter your Email address:</label><br>
+                <input type="email" id="email" class="email"><br><br>
+                <label>Enter your Password:</label><br>
+                <input type="password" id="password" class="password">
+            </form>
+        </div>
+
+        
+        <div id="form2" class="form-group">
+            
+            <form onsubmit="validateForm2()">
+                <h2>Form 2</h2>
+                <input type="text" id="firstName" placeholder="First Name" class="form2"><br><br>
+                <input type="text" id="lastName" placeholder="Last Name" class="form2"><br><br>
+                <input type="email" id="email" placeholder="Email Address" class="form2"><br><br>
+                <input type="password" id="password" placeholder="Password" class="form2"><br><br>
+                <input type="password" id="confirmPassword" placeholder=" Confirm Password" class="form2"><br><br>
+                <input type="text" id="address" placeholder="Address" class="form2"><br><br>
+                <input type="text" id="phone_number" placeholder="Phone Number" class="form2"><br><br>
+
+            </form>
+        </div>
+
+        <br>
+        <button class="button1" onclick="navigatefromcheckout('Payment.html')"> Checkout</button><br><br>
+    </div>
+    <script src="assets/cart.js"></script>
+</body>
+</html>

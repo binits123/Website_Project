@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/shoppingcart.css">
+    <link rel="stylesheet" href="assets/header.css">
+    <title>shopping cart</title>
+</head>
+
+<body>
+   
+    <header class="header">
+        <a href="#" class="logo">XYZshoe</a>
+        <div class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="login.html">LOG IN</a>
+            <a href="shop.html">SHOP</a>
+            <a href="contactus.html">CONTACT</a>
+            <a href="aboutus.html">ABOUT US</a>
+        </div>
+        <div class="navbar-icon" onclick="toggleNavbar()">
+            <i class="bi bi-list"></i>
+        </div>
+    </header>
+    
+    <div class="container2">
+        <h2>Cart Details</h2>
+        <hr>
+        <p class="h1">Products</p>
+        <p class="h2">Price</p>
+        <p class="h3">Qty</p>
+        <p class="h4">Total</p>
+        <p class="h5">Action</p>
+        <hr>
+        <div class="value">
+            <img src="images/heels11.jpg" class="value1">
+            <p class="value2"> 2500</p>
+            <input type="number" value="2" class="number">
+            <p class="value3">3000</p>
+            <button class="value4">X</button>
+
+        </div>
+        <div class="total_price">
+            <h3> Total Price:</h3>
+        </div><br><br><br><br>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <button class="close" onclick="navigate('shop.html')">Close</button>
+
+    <script src="assets/cart.js"></script>
+</body>
+
+</html>
